@@ -1,0 +1,20 @@
+/* ==================  Buttons Part Start  ================== */
+button{
+    &:focus{
+        border-color: none;
+        box-shadow: none;
+    }
+}
+.btn-hover{
+    background: $hover;
+    @include text(14px,600,#fff);
+    opacity: 90%;
+    border: none;
+    display: inline-block !important;
+    @include transition();
+    &:hover{
+        opacity: 100%;
+        color: #fff;
+    }
+}
+/* ==================  Buttons Part End  ================== */

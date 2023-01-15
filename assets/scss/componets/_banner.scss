@@ -1,0 +1,53 @@
+/* ============================== Banner Part Start =================================== */
+#banner{
+    padding-top: 30px;
+    .banner_slider{
+        .banner_item{
+            .banner_text{
+                h2{
+                    @include text(43px,700,$blue);
+                    span{
+                        display: block;
+                    }
+                    padding-bottom: 25px;
+                }
+                a{
+                    padding: 18px 28px;
+                    @include text(16px,600,$blue);
+                    border: 1px solid $blue;
+                    border-radius: 20px;
+                    margin-right: 20px;
+                    @include transition();
+                    &:hover{
+                        background: $hover;
+                        border-color: $hover;
+                        color: #fff;
+                    }
+                }
+            }
+            .banner_img{
+                position: relative;
+                .ovrly_price{
+                    position: absolute;
+                    width: 120px;
+                    height: 120px;
+                    bottom: 40px;
+                    right: -30px;
+                    background: $hover;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        @include text(22px,600,#fff);
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Banner Part End =================================== */
+

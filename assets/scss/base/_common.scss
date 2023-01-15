@@ -1,0 +1,66 @@
+@import '../mixins/mixins';
+/* ==================  Font Part Start  ================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// font-family: 'Roboto', sans-serif;
+/* ==================  Common Part Start  ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+.pagination_wrap{
+    padding-top: 20px;
+    .pagination_nav{
+        display: flex;
+        justify-content: center;
+        li{
+            &.active{
+                background: $hover;
+                border-color: $hover;
+            }
+            width: 19px;
+            margin: 0 5px;
+            height: 19px;
+            border: 1px solid #ADADAD;
+            border-radius: 50%;
+        }
+    }
+}
+                                        
+/* ==================  Common Part End  ================== */

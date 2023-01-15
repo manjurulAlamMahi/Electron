@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ====================== Header Part Start ======================= -->
+    <header id="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header_top_left">
+                            <p><span>Need help? </span>Call us: (+98) 0234 456 789</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header_top_right">
+                            <a href="#"><i class="mdi mdi-map-marker"></i>Our store</a>
+                            <a href="#">Track your order<i class="mdi mdi-truck"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 align-self-center">
+                        <div class="logo">
+                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="" name="search" placeholder="Serach any things">
+                                <button type="submit" class="btn btn-hover">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 align-self-center">
+                        <div class="side_nav">
+                            <a href="#"><i class="fa-regular fa-user"></i>Sign In</a>
+                            <a href="#"><i class="mdi mdi-heart-outline"></i><span class="badge-hover">0</span>Wishlist</a>
+                            <a href="#"><i class="mdi mdi-cart-outline"></i><span class="badge-hover">0</span>Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====================== Header Part End ======================= -->
+   
+    <!-- ====================== Navigation Part Start ======================= -->
+    <nav id="main_menu" class="navbar navbar-expand-lg navbar-expand-md py-lg-0">
+        <div class="container" style="background: transparent; padding: 0;">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-list"></span>
+            </button>
+            <div class="browse_categories">
+                <button class="btn dropdown-toggle btn-hover" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse categories<i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse menu_part" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banner">Home <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_us">Catalog <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#engineers">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_us">Pages <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_us">About US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="return_msg">
+                <h6>30 Days Free Return</h6>
+            </div>
+        </div>
+    </nav>
+    <!-- ====================== Navigation Part End ======================= -->
+
+    <!-- ====================== Banner Part Start ======================= -->
+    <section id="banner">
+        <div class="container">
+            <div class="banner_slider">
+                <div class="banner_item">
+                    <div class="row">
+                        <div class="col-lg-8 align-self-center">
+                            <div class="banner_text">
+                                <h2>Canon <span>camera</span></h2>
+                                <a href="#">Shop now</a>
+                                <a href="#">View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="banner_img">
+                                <img width="w-100 img-fluid" src="assets/images/banners/banner1.png" alt="banner1">
+                                <div class="ovrly_price">
+                                    <p>only <span>$89</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== Banner Part End ======================= -->
+
+    <!-- ====================== Categories Part Start ======================= -->
+    <section id="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="categories_item">
+                        <div class="cate_img">
+                            <img src="assets/images/categories/cate1.png" alt="cate1">
+                        </div>
+                        <div class="cate_title">
+                            <h6>Speaker</h6>
+                            <p>(6 items)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="categories_item">
+                        <div class="cate_img">
+                            <img src="assets/images/categories/cate2.png" alt="cate2">
+                        </div>
+                        <div class="cate_title">
+                            <h6>Desktop & laptop</h6>
+                            <p>(6 items)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="categories_item">
+                        <div class="cate_img">
+                            <img src="assets/images/categories/cate3.png" alt="cate3">
+                        </div>
+                        <div class="cate_title">
+                            <h6>DSLR camera</h6>
+                            <p>(6 items)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== Categories Part End ======================= -->
+    
+    <!-- ====================== Popular Product Part Start ======================= -->
+    <section id="popular_product">
+        <div class="container">
+            <div class="product_topbar">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="top_title">
+                            <h4>Popular products</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="filters">
+                            <a href="#">Cameras</a>
+                            <a href="#">Laptops</a>
+                            <a href="#">Tablets</a>
+                            <a href="#">Mouse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular_product_list">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products04.png" alt="products03">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Play game</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products02.png" alt="products02">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Wireless headphones</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products01.png" alt="products01">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>DSLR Camera</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products03.png" alt="products03">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Tablet as a laptop</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products02.png" alt="products02">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Wireless headphones</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products03.png" alt="products03">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Tablet as a laptop</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products01.png" alt="products01">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>DSLR Camera</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="popular_product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/products04.png" alt="products03">
+                                <div class="ovrly">
+                                    <a href="#"><i class="mdi mdi-heart-outline"></i></a>
+                                </div>
+                            </div>
+                            <div class="pricing_stars">
+                                <h6>Play game</h6>
+                                <p>$11,70 <del>$15,70</del></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="adding_card">
+                                <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination_wrap">
+                <ul class="pagination_nav">
+                    <li class="active"><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== Popular Product Part End ======================= -->
+
+    <!-- ====================== Sale Part Start ======================= -->
+    <section id="sale" style="background: url(assets/images/banners/sale.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-7">
+                    <div class="text text-center">
+                        <a class="btn btn-hover" href="#">New laptop</a>
+                        <h4>Sale up to 50% off</h4>
+                        <p>12 inch hd display</p>
+                        <a class="btn btn-hover" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== Sale Part End ======================= -->
+
+    <!-- ====================== Recently Views Part Start ======================= -->
+    <section id="rv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="rv_left">
+                        <div class="product_details">
+                            <div class="product_img">
+                                <img src="assets/images/products/rv1.png" alt="rv1">
+                            </div>
+                            <div class="product_desp">
+                                <div class="price_stars">
+                                    <h4>JBL bar 2.1 deep bass</h4>
+                                    <p>$11,70 <del>$16,70</del></p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="quantity_wrap">
+                                    <div class="quantity_input">
+                                        <button type="button" class="input_number_decrement">
+                                            <i class="fal fa-minus"></i>
+                                        </button>
+                                        <input class="input_number" type="text" value="1">
+                                        <button type="button" class="input_number_increment">
+                                            <i class="fal fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="adding_card">
+                                    <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                    <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== Recently Views Part End ======================= -->
+    
+    <!-- ====================== Navigation Part Start ======================= -->
+
+    <!-- ====================== Navigation Part End ======================= -->
+
+    <!-- ====================== Navigation Part Start ======================= -->
+
+    <!-- ====================== Navigation Part End ======================= -->
+
+
+    <!-- JS link -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="https://kit.fontawesome.com/2023654590.js" crossorigin="anonymous"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Init -->
+    <script src="assets/js/materialdesign.init.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

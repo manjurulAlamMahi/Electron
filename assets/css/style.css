@@ -1,0 +1,508 @@
+/* ==================  Font Part Start  ================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* ==================  Common Part Start  ================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.pagination_wrap {
+  padding-top: 20px;
+}
+.pagination_wrap .pagination_nav {
+  display: flex;
+  justify-content: center;
+}
+.pagination_wrap .pagination_nav li {
+  width: 19px;
+  margin: 0 5px;
+  height: 19px;
+  border: 1px solid #ADADAD;
+  border-radius: 50%;
+}
+.pagination_wrap .pagination_nav li.active {
+  background: #EDA415;
+  border-color: #EDA415;
+}
+
+/* ==================  Common Part End  ================== */
+/* ==================  Buttons Part Start  ================== */
+button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.btn-hover {
+  background: #EDA415;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 90%;
+  border: none;
+  display: inline-block !important;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.btn-hover:hover {
+  opacity: 100%;
+  color: #fff;
+}
+
+/* ==================  Buttons Part End  ================== */
+/* ============ Menu Fix Start ============= */
+/* ============ Menu Fix End ============= */
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes box_shadow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 183px;
+    height: 183px;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes box_shadow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 183px;
+    height: 183px;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+/* ============================== Header Part Start =================================== */
+#header .header_top {
+  padding: 22px 0;
+}
+#header .header_top .header_top_left p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #292D32;
+}
+#header .header_top .header_top_left p span {
+  font-weight: 500;
+}
+#header .header_top .header_top_right {
+  text-align: right;
+}
+#header .header_top .header_top_right a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #292D32;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  margin-left: 36px;
+}
+#header .header_top .header_top_right a:hover {
+  color: #EDA415;
+}
+#header .header_top .header_top_right a i {
+  padding: 0 10px;
+  font-size: 16px;
+}
+#header .header_bottom {
+  padding: 22px 0;
+  background: #003F62;
+}
+#header .header_bottom .search input {
+  background: #FFFFFF;
+  border-radius: 20px 0 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #292D32;
+  padding: 14px 25px;
+  border: none;
+}
+#header .header_bottom .search input:focus {
+  border-color: none;
+  box-shadow: none;
+}
+#header .header_bottom .search button {
+  padding: 17px 41px;
+  border-radius: 0 20px 20px 0;
+}
+#header .header_bottom .side_nav {
+  text-align: right;
+}
+#header .header_bottom .side_nav a {
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+}
+#header .header_bottom .side_nav a:first-child i {
+  padding-right: 12px;
+}
+#header .header_bottom .side_nav a i {
+  padding-right: 30px;
+  font-size: 16px;
+}
+#header .header_bottom .side_nav a .badge-hover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  background: #EDA415;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* ============================== Header Part End =================================== */
+/* ============================== Menu Part Start =================================== */
+#main_menu {
+  background: #F4F4F4;
+}
+#main_menu .browse_categories button {
+  border-radius: 0 !important;
+  padding: 23px 15px;
+}
+#main_menu .browse_categories button i {
+  padding-left: 16px;
+}
+#main_menu .browse_categories button::after {
+  display: none;
+}
+#main_menu .menu_part ul li {
+  margin-left: 33px;
+}
+#main_menu .menu_part ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #292D32;
+}
+#main_menu .menu_part ul li a i {
+  padding-left: 16px;
+}
+#main_menu .return_msg h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #003F62;
+}
+#main_menu .mobile_menu_button {
+  display: none;
+}
+
+/* ============================== Menu Part End =================================== */
+/* ============================== Banner Part Start =================================== */
+#banner {
+  padding-top: 30px;
+}
+#banner .banner_slider .banner_item .banner_text h2 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #003F62;
+  padding-bottom: 25px;
+}
+#banner .banner_slider .banner_item .banner_text h2 span {
+  display: block;
+}
+#banner .banner_slider .banner_item .banner_text a {
+  padding: 18px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #003F62;
+  border: 1px solid #003F62;
+  border-radius: 20px;
+  margin-right: 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#banner .banner_slider .banner_item .banner_text a:hover {
+  background: #EDA415;
+  border-color: #EDA415;
+  color: #fff;
+}
+#banner .banner_slider .banner_item .banner_img {
+  position: relative;
+}
+#banner .banner_slider .banner_item .banner_img .ovrly_price {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  bottom: 40px;
+  right: -30px;
+  background: #EDA415;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner .banner_slider .banner_item .banner_img .ovrly_price p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+#banner .banner_slider .banner_item .banner_img .ovrly_price p span {
+  display: block;
+}
+
+/* ============================== Banner Part End =================================== */
+/* ============================== Categories Part Start =================================== */
+#category {
+  padding: 50px 80px;
+}
+#category .categories_item {
+  border: 1px solid #A5A5A5;
+  border-radius: 20px;
+  padding: 26px 20px;
+  height: 150px;
+  display: flex;
+}
+#category .categories_item .cate_img {
+  align-self: center;
+}
+#category .categories_item .cate_title {
+  padding-left: 20px;
+  align-self: center;
+}
+#category .categories_item .cate_title h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #003F62;
+}
+#category .categories_item .cate_title p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003F62;
+}
+
+/* ============================== Categories Part End =================================== */
+/* ============================== Popular Product Part Start =================================== */
+#popular_product {
+  padding: 82px 0 120px 0;
+}
+#popular_product .product_topbar {
+  padding-bottom: 55px;
+}
+#popular_product .product_topbar .top_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #003F62;
+}
+#popular_product .product_topbar .filters {
+  text-align: end;
+}
+#popular_product .product_topbar .filters a {
+  margin-left: 13px;
+  border: 1px solid #B5B5B5;
+  border-radius: 20px;
+  padding: 10px 36px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #003F62;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#popular_product .product_topbar .filters a:hover {
+  border-color: #003F62;
+}
+#popular_product .popular_product_list .popular_product_details {
+  border: 1px solid #B6B6B6;
+  border-radius: 20px;
+  height: 315px;
+  margin-bottom: 30px;
+}
+#popular_product .popular_product_list .popular_product_details .product_img {
+  text-align: center;
+  position: relative;
+}
+#popular_product .popular_product_list .popular_product_details .product_img .ovrly {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+#popular_product .popular_product_list .popular_product_details .product_img .ovrly a {
+  background: #B3D4E5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #292D32;
+}
+#popular_product .popular_product_list .popular_product_details .pricing_stars {
+  padding: 22px 13px;
+}
+#popular_product .popular_product_list .popular_product_details .pricing_stars h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003F62;
+  padding-bottom: 15px;
+}
+#popular_product .popular_product_list .popular_product_details .pricing_stars p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4A4A4A;
+  padding-bottom: 15px;
+}
+#popular_product .popular_product_list .popular_product_details .pricing_stars p del {
+  font-size: 12px;
+  font-weight: 300;
+  color: #4A4A4A;
+}
+#popular_product .popular_product_list .popular_product_details .pricing_stars i {
+  color: #EDA415;
+  font-size: 16px;
+}
+#popular_product .popular_product_list .popular_product_details .adding_card {
+  margin-top: 20px;
+  padding: 22px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  display: none;
+}
+#popular_product .popular_product_list .popular_product_details .adding_card a.add_cart {
+  background: #87BCD9;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #272727;
+}
+#popular_product .popular_product_list .popular_product_details .adding_card a.add_cart i {
+  margin-left: 20px;
+  padding: 1px 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #fff;
+  background: #EDA415;
+  border-radius: 50%;
+}
+#popular_product .popular_product_list .popular_product_details .adding_card a.visible {
+  padding: 10px 15px;
+  background: #87BCD9;
+  border-radius: 20px;
+}
+#popular_product .popular_product_list .popular_product_details .adding_card a.visible i {
+  color: #272727;
+  font-size: 18px;
+}
+#popular_product .popular_product_list .popular_product_details:hover .pricing_stars {
+  display: none;
+}
+#popular_product .popular_product_list .popular_product_details:hover .adding_card {
+  display: inline-block;
+}
+
+/* ============================== Popular Product Part End =================================== */
+/* ============================== Sale Part Start =================================== */
+#sale {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 90px 60px;
+}
+#sale .text h4 {
+  padding-top: 48px;
+  font-size: 41px;
+  font-weight: 700;
+  color: #1B5A7D;
+  padding-bottom: 20px;
+}
+#sale .text p {
+  padding-bottom: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ============================== Sale Part End =================================== *//*# sourceMappingURL=style.css.map */

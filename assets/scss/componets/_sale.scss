@@ -1,0 +1,19 @@
+/* ============================== Sale Part Start =================================== */
+#sale{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 90px 60px;
+    .text{
+        h4{
+            padding-top: 48px;
+            @include text(41px,700,$blueI);
+            padding-bottom: 20px;
+        }
+        p{
+            padding-bottom: 48px;
+            @include text(18px,500,#fff);
+        }
+    }
+}
+/* ============================== Sale Part End =================================== */

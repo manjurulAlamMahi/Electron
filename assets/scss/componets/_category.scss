@@ -1,0 +1,27 @@
+/* ============================== Categories Part Start =================================== */
+#category{
+    padding: 50px 80px;
+    .categories_item{
+        border: 1px solid #A5A5A5;
+        border-radius: 20px;
+        padding: 26px 20px;
+        height: 150px;
+        display: flex;
+        .cate_img{
+            align-self: center;
+        }
+        .cate_title{
+            padding-left: 20px;
+            align-self: center;
+            
+            h6{
+                @include text(18px,600,$blue);
+            }
+            p{
+                @include text(18px,500,$blue);
+            }
+        }
+    }
+}
+
+/* ============================== Categories Part End =================================== */

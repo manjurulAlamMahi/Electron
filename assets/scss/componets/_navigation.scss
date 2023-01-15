@@ -1,0 +1,39 @@
+/* ============================== Menu Part Start =================================== */
+#main_menu{
+    background: #F4F4F4;
+    .browse_categories{
+        button{
+            border-radius: 0 !important;
+            padding: 23px 15px;
+            i{
+                padding-left: 16px;
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .menu_part{
+        ul{
+            li{
+                margin-left: 33px;
+                a{
+                    @include text(16px ,500,$text);
+                    i{
+                        padding-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .return_msg{
+        h6{
+            @include text(16px ,700,$blue);
+        }
+    }
+    .mobile_menu_button{
+        display: none;
+    }
+}
+/* ============================== Menu Part End =================================== */
+
