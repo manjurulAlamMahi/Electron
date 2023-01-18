@@ -62,5 +62,15 @@ body{
         }
     }
 }
+.header{
+    h2{
+        @include text(25px,600,$blue);
+        padding-bottom: 52px;
+    }
+    a{
+        text-align: end;
+        @include text(20px,500,$blue);
+    }
+}
                                         
 /* ==================  Common Part End  ================== */

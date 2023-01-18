@@ -1,0 +1,19 @@
+/* ============================== Sponser Part Start =================================== */
+#sponsers{
+    .sponsers_row{
+        display: flex;
+        flex-wrap: wrap;
+        background: #E2F4FF;
+        padding: 47px 30px;
+        .sponsers_col{
+            margin: 0 12px;
+            width: 17.72%;
+            text-align: center;
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+/* ============================== Sponser Part End =================================== */

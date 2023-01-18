@@ -1,0 +1,29 @@
+/* ============================== Service Part Start =================================== */
+#service{
+    .service_row{
+        background: $blueIII;
+        border-radius: 20px;
+        padding: 44px 80px;
+        .service_content{
+            display: flex;
+            .icon{
+                align-self: center;
+                i{
+                    font-size: 45px;
+                    color: $hover;
+                }
+            }
+            .details{
+                align-self: center;
+                padding-left: 30px;
+                h6{
+                    @include text(22px,600,$blue);
+                }
+                p{
+                    @include text(18px,400,$blue);
+                }
+            }
+        }
+    }
+}
+/* ============================== Service Part End =================================== */

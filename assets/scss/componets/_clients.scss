@@ -1,0 +1,48 @@
+/* ============================== Clients Part Start =================================== */
+#clients{
+    padding: 75px 0 120px 0;
+    .clients_item{
+        border: 1px solid #BABABA;
+        border-radius: 20px;
+        height: 250px;
+        .clients_topbar{
+            padding: 23px;
+            display: flex;
+            align-items: center;
+            .avatar{
+                width: 86px;
+                height: 86px;
+                border-radius: 50%;
+                margin-right: 45px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    content: '';
+                    width: 95px;
+                    height: 95px;
+                    border-radius: 50%;
+                    border: 2px dotted $hover;
+                }
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            h6{
+                align-self: center;
+                @include text(16px,500,$blue);
+            }
+        }
+        p{
+            padding: 10px 16px;
+            margin: 0 16px;
+            @include text(14px,400,$blue);
+            background: $blueIII;
+            border-radius: 20px;
+        }
+    }
+}
+/* ============================== Clients Part End =================================== */

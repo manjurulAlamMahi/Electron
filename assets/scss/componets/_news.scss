@@ -1,0 +1,29 @@
+/* ============================== News Part Start =================================== */
+#news{
+    padding: 190px 0 160px 0;
+    .news_details{
+        border: 1px solid #C8C8C8;
+        border-radius: 20px;
+        padding: 40px 16px;
+        .news_content{
+            span{
+                @include text(20px,500,$blue);
+                border: 1px solid #D4D4D4;
+                border-radius: 20px;
+                padding: 5px 20px;
+                text-align: center;
+            }
+            h4{
+                padding: 10px 0 20px 0;
+                @include text(20px,600,$blue);
+            }
+            p,h6{
+                @include text(14px,400,$blue);
+            }
+            p{
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+/* ============================== News Part End =================================== */

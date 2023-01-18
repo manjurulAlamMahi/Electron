@@ -1,0 +1,133 @@
+/* ============================== Recently Viewed Part Start =================================== */
+#rv{
+    padding: 95px 0 75px 0;
+    .rv_left{
+        border: 1px solid #B6B6B6;
+        border-radius: 20px;
+        padding: 0 10px;
+        .product_details{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+            .product_desp{
+                align-self: center;
+                .price_stars{
+                    h6{
+                        @include text(18px,500,$blue);
+                        padding-bottom: 15px;
+                    }
+                    p{
+                        @include text(18px,600,#4A4A4A);
+                        padding-bottom: 15px;
+                        del{
+                            @include text(12px,300,#4A4A4A);
+                        }
+                    }
+                    i{
+                        color: $hover;
+                        font-size: 16px;
+                    }
+                }
+                .quantity_wrap {
+                    display: flex;
+                    margin: 30px 0;
+                    align-items: center;
+                    justify-content: space-between;
+                    .quantity_input {
+                        position: relative;
+                        &:before {
+                            font-weight: 500;
+                            margin-right: 10px;
+                            content: 'Quantity:';
+                            color: $blue;
+                            display: inline-block;
+                        }
+                        input {
+                            height: 40px;
+                            margin: 0 4px;
+                            width: 100px;
+                            text-align: center;
+                        }
+                        button {
+                            width: 40px;
+                            line-height: 40px;
+                            height: 40px;
+                            background: $hover;
+                            border: none;
+                            color: #fff;
+                            font-weight: 800;
+                        }
+                    }
+                }
+                .adding_card{
+                    margin-top: 20px;
+                    a{
+                        margin-right: 20px;
+                        &.add_cart{
+                            background: #87BCD9;
+                            border-radius: 20px;
+                            padding: 10px 20px;
+                            @include text(16px,600,#272727);
+                            i{
+                                margin-left: 20px;
+                                padding: 1px 5px;
+                                text-align: center;
+                                line-height: 30px;
+                                font-size: 18px;
+                                color: #fff;
+                                background: $hover;
+                                border-radius: 50%;
+                            }
+                        }
+                        &.visible{
+                            padding: 10px 15px;
+                            background: #87BCD9;
+                            border-radius: 20px;
+                            i{
+                                color: #272727;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rv_right{
+        border: 1px solid #B6B6B6;
+        border-radius: 20px;
+        padding: 21px 36px;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .product_details{
+            .product_img{
+                img{
+                    width: 100%;
+                }
+            }
+            .product_desp{
+                align-self: center;
+                .price_stars{
+                    h6{
+                        @include text(18px,500,$blue);
+                        padding-bottom: 15px;
+                    }
+                    p{
+                        @include text(18px,600,#4A4A4A);
+                        padding-bottom: 15px;
+                        del{
+                            @include text(12px,300,#4A4A4A);
+                        }
+                    }
+                    i{
+                        color: $hover;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Recently Viewed Part End =================================== */

@@ -61,6 +61,19 @@ body {
   border-color: #EDA415;
 }
 
+.header h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #003F62;
+  padding-bottom: 52px;
+}
+.header a {
+  text-align: end;
+  font-size: 20px;
+  font-weight: 500;
+  color: #003F62;
+}
+
 /* ==================  Common Part End  ================== */
 /* ==================  Buttons Part Start  ================== */
 button:focus {
@@ -505,4 +518,400 @@ button:focus {
   color: #fff;
 }
 
-/* ============================== Sale Part End =================================== *//*# sourceMappingURL=style.css.map */
+/* ============================== Sale Part End =================================== */
+/* ============================== Recently Viewed Part Start =================================== */
+#rv {
+  padding: 95px 0 75px 0;
+}
+#rv .rv_left {
+  border: 1px solid #B6B6B6;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+#rv .rv_left .product_details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+#rv .rv_left .product_details .product_desp {
+  align-self: center;
+}
+#rv .rv_left .product_details .product_desp .price_stars h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003F62;
+  padding-bottom: 15px;
+}
+#rv .rv_left .product_details .product_desp .price_stars p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4A4A4A;
+  padding-bottom: 15px;
+}
+#rv .rv_left .product_details .product_desp .price_stars p del {
+  font-size: 12px;
+  font-weight: 300;
+  color: #4A4A4A;
+}
+#rv .rv_left .product_details .product_desp .price_stars i {
+  color: #EDA415;
+  font-size: 16px;
+}
+#rv .rv_left .product_details .product_desp .quantity_wrap {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+#rv .rv_left .product_details .product_desp .quantity_wrap .quantity_input {
+  position: relative;
+}
+#rv .rv_left .product_details .product_desp .quantity_wrap .quantity_input:before {
+  font-weight: 500;
+  margin-right: 10px;
+  content: "Quantity:";
+  color: #003F62;
+  display: inline-block;
+}
+#rv .rv_left .product_details .product_desp .quantity_wrap .quantity_input input {
+  height: 40px;
+  margin: 0 4px;
+  width: 100px;
+  text-align: center;
+}
+#rv .rv_left .product_details .product_desp .quantity_wrap .quantity_input button {
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+  background: #EDA415;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+}
+#rv .rv_left .product_details .product_desp .adding_card {
+  margin-top: 20px;
+}
+#rv .rv_left .product_details .product_desp .adding_card a {
+  margin-right: 20px;
+}
+#rv .rv_left .product_details .product_desp .adding_card a.add_cart {
+  background: #87BCD9;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #272727;
+}
+#rv .rv_left .product_details .product_desp .adding_card a.add_cart i {
+  margin-left: 20px;
+  padding: 1px 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #fff;
+  background: #EDA415;
+  border-radius: 50%;
+}
+#rv .rv_left .product_details .product_desp .adding_card a.visible {
+  padding: 10px 15px;
+  background: #87BCD9;
+  border-radius: 20px;
+}
+#rv .rv_left .product_details .product_desp .adding_card a.visible i {
+  color: #272727;
+  font-size: 18px;
+}
+#rv .rv_right {
+  border: 1px solid #B6B6B6;
+  border-radius: 20px;
+  padding: 21px 36px;
+  margin-bottom: 50px;
+}
+#rv .rv_right:last-child {
+  margin-bottom: 0;
+}
+#rv .rv_right .product_details .product_img img {
+  width: 100%;
+}
+#rv .rv_right .product_details .product_desp {
+  align-self: center;
+}
+#rv .rv_right .product_details .product_desp .price_stars h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003F62;
+  padding-bottom: 15px;
+}
+#rv .rv_right .product_details .product_desp .price_stars p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4A4A4A;
+  padding-bottom: 15px;
+}
+#rv .rv_right .product_details .product_desp .price_stars p del {
+  font-size: 12px;
+  font-weight: 300;
+  color: #4A4A4A;
+}
+#rv .rv_right .product_details .product_desp .price_stars i {
+  color: #EDA415;
+  font-size: 16px;
+}
+
+/* ============================== Recently Viewed Part End =================================== */
+/* ============================== Service Part Start =================================== */
+#service .service_row {
+  background: #E2F4FF;
+  border-radius: 20px;
+  padding: 44px 80px;
+}
+#service .service_row .service_content {
+  display: flex;
+}
+#service .service_row .service_content .icon {
+  align-self: center;
+}
+#service .service_row .service_content .icon i {
+  font-size: 45px;
+  color: #EDA415;
+}
+#service .service_row .service_content .details {
+  align-self: center;
+  padding-left: 30px;
+}
+#service .service_row .service_content .details h6 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #003F62;
+}
+#service .service_row .service_content .details p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #003F62;
+}
+
+/* ============================== Service Part End =================================== */
+/* ============================== Clients Part Start =================================== */
+#clients {
+  padding: 75px 0 120px 0;
+}
+#clients .clients_item {
+  border: 1px solid #BABABA;
+  border-radius: 20px;
+  height: 250px;
+}
+#clients .clients_item .clients_topbar {
+  padding: 23px;
+  display: flex;
+  align-items: center;
+}
+#clients .clients_item .clients_topbar .avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin-right: 45px;
+  position: relative;
+}
+#clients .clients_item .clients_topbar .avatar::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 2px dotted #EDA415;
+}
+#clients .clients_item .clients_topbar .avatar img {
+  width: 100%;
+  max-width: 100%;
+}
+#clients .clients_item .clients_topbar h6 {
+  align-self: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #003F62;
+}
+#clients .clients_item p {
+  padding: 10px 16px;
+  margin: 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #003F62;
+  background: #E2F4FF;
+  border-radius: 20px;
+}
+
+/* ============================== Clients Part End =================================== */
+/* ============================== Sponser Part Start =================================== */
+#sponsers .sponsers_row {
+  display: flex;
+  flex-wrap: wrap;
+  background: #E2F4FF;
+  padding: 47px 30px;
+}
+#sponsers .sponsers_row .sponsers_col {
+  margin: 0 12px;
+  width: 17.72%;
+  text-align: center;
+}
+#sponsers .sponsers_row .sponsers_col img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ============================== Sponser Part End =================================== */
+/* ============================== News Part Start =================================== */
+#news {
+  padding: 190px 0 160px 0;
+}
+#news .news_details {
+  border: 1px solid #C8C8C8;
+  border-radius: 20px;
+  padding: 40px 16px;
+}
+#news .news_details .news_content span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #003F62;
+  border: 1px solid #D4D4D4;
+  border-radius: 20px;
+  padding: 5px 20px;
+  text-align: center;
+}
+#news .news_details .news_content h4 {
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003F62;
+}
+#news .news_details .news_content p, #news .news_details .news_content h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #003F62;
+}
+#news .news_details .news_content p {
+  padding-bottom: 40px;
+}
+
+/* ============================== News Part End =================================== */
+/* ============================== Footer Part Start =================================== */
+#footer {
+  padding: 42px 0;
+  background: #E2F4FF;
+}
+#footer .subscribe {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 38px 95px;
+}
+#footer .subscribe h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #003F62;
+}
+#footer .subscribe .input-group input {
+  background: #EDA415;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px 0 0 20px;
+  color: #fff;
+}
+#footer .subscribe .input-group input::-moz-placeholder {
+  color: #fff;
+}
+#footer .subscribe .input-group input:-ms-input-placeholder {
+  color: #fff;
+}
+#footer .subscribe .input-group input::placeholder {
+  color: #fff;
+}
+#footer .subscribe .input-group input:focus {
+  box-shadow: none;
+}
+#footer .subscribe .input-group button {
+  padding: 12px 25px;
+  border-radius: 0 20px 20px 0;
+  background: #EDA415;
+  color: #fff;
+  border: none;
+}
+#footer .subscribe .contact_us {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#footer .subscribe .contact_us .icon {
+  padding-right: 10px;
+}
+#footer .subscribe .contact_us .icon i {
+  font-size: 35px;
+  color: #EDA415;
+}
+#footer .subscribe .contact_us .contact_list h6, #footer .subscribe .contact_us .contact_list p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+}
+#footer .footer_contents {
+  padding-top: 40px;
+}
+#footer .footer_contents .footer_left p {
+  padding-top: 40px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #003F62;
+}
+#footer .footer_contents .footer_left ul {
+  padding-top: 60px;
+  display: flex;
+  position: relative;
+}
+#footer .footer_contents .footer_left ul::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background: #9D9D9D;
+  top: 30px;
+  left: 0;
+}
+#footer .footer_contents .footer_left ul li {
+  padding-right: 40px;
+}
+#footer .footer_contents .footer_menu h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003F62;
+  padding-bottom: 15px;
+}
+#footer .footer_contents .footer_menu ul li {
+  padding: 0 0 15px 20px;
+  position: relative;
+}
+#footer .footer_contents .footer_menu ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #003F62;
+}
+#footer .footer_contents .footer_menu ul li::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #D9D9D9;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#footer .footer_contents .footer_menu ul li:hover::after {
+  background: #EDA415;
+}
+
+/* ============================== Footer Part End =================================== *//*# sourceMappingURL=style.css.map */
