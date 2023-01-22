@@ -1,0 +1,46 @@
+/* ============================== Reviews & Description  Part Start =================================== */
+#reviews_desp{
+    padding-bottom: 60px;
+    .revews_desp_navbar{
+        ul{
+            justify-content: center;
+            li{
+                margin: 0 10px;
+                button{
+                    border: 1px solid #8F8F8F;
+                    border-radius: 20px;
+                    padding: 15px 34px;
+                    @include text(20px,500,#373737);
+                    &.active{
+                        background: #003F62;
+                        color: #fff;
+                        border-color: #003F62;
+                    }
+                }
+
+            }
+        }
+    }
+    .revews_desp_content{
+        .description,
+        .reviews{
+            padding: 42px 50px;
+            border: 1px solid #B8B8B8;
+            border-radius: 20px;
+            h2{
+                @include text(22px,600,$blue);
+            }
+            p{
+                padding: 17px 0;
+                @include text(20px,400,#4F4F4F);
+            }
+            a{
+                @include text(20px,400,#fff);
+                text-decoration: underline;
+                padding: 5px 28px;
+                background: $blue;
+            }
+        }
+    }
+}
+/* ============================== Reviews & Description  Part End =================================== */

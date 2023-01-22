@@ -1,0 +1,96 @@
+/* ============================== Related Product Part Start =================================== */
+#related_product{
+    padding-bottom: 100px;
+    h2{
+        @include text(28px,600,#1B5A7D);
+        padding-bottom: 55px;
+    }
+    .related_product_details{
+        border: 1px solid #B6B6B6;
+        border-radius: 20px;
+        height: 315px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        .product_img{
+            text-align: center;
+            position: relative;
+            .ovrly{
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                a{
+                    background: #B3D4E5;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 18px;
+                    color: #292D32;
+                }
+            }
+        }
+        .pricing_stars{
+            padding: 22px 13px;
+            h6{
+                @include text(18px,500,$blue);
+                padding-bottom: 15px;
+            }
+            p{
+                @include text(18px,600,#4A4A4A);
+                padding-bottom: 15px;
+                del{
+                    @include text(12px,300,#4A4A4A);
+                }
+            }
+            i{
+                color: $hover;
+                font-size: 16px;
+            }
+        }
+        .adding_card{
+            margin-top: 20px;
+            padding: 22px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            display: none;
+            a{
+                &.add_cart{
+                    background: #87BCD9;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    @include text(16px,600,#272727);
+                    i{
+                        margin-left: 20px;
+                        padding: 1px 5px;
+                        text-align: center;
+                        line-height: 30px;
+                        font-size: 18px;
+                        color: #fff;
+                        background: $hover;
+                        border-radius: 50%;
+                    }
+                }
+                &.visible{
+                    padding: 10px 15px;
+                    background: #87BCD9;
+                    border-radius: 20px;
+                    i{
+                        color: #272727;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .pricing_stars{
+                display: none;
+            }
+            .adding_card{
+                display: inline-block;
+            }
+        }
+    }
+}
+/* ============================== Related Product Part End =================================== */
