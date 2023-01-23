@@ -5,10 +5,17 @@
         border: 1px solid #B6B6B6;
         border-radius: 20px;
         padding: 0 10px;
+        position: relative;
         .product_details{
             display: flex;
             justify-content: space-between;
-            padding: 0 25px;
+            padding: 10px 25px;
+            .product_img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+            }
             .product_desp{
                 align-self: center;
                 .price_stars{
@@ -92,42 +99,85 @@
                 }
             }
         }
-    }
-    .rv_right{
-        border: 1px solid #B6B6B6;
-        border-radius: 20px;
-        padding: 21px 36px;
-        margin-bottom: 50px;
-        &:last-child{
-            margin-bottom: 0;
-        }
-        .product_details{
-            .product_img{
-                img{
-                    width: 100%;
+        .slick-dots{
+            position: absolute;
+            bottom: 60px;
+            left: 180px;
+            display: flex;
+            li{
+                &.slick-active{
+                    button{
+                        background: $hover;
+                        border-color: $hover;
+                    }
+                }
+                button{
+                    width: 19px;
+                    margin: 0 5px;
+                    height: 19px;
+                    border: 1px solid #ADADAD;
+                    border-radius: 50%;
+                    font-size: 0;
                 }
             }
-            .product_desp{
-                align-self: center;
-                .price_stars{
-                    h6{
-                        @include text(18px,500,$blue);
-                        padding-bottom: 15px;
+        }
+    }
+    .rv_silder_nav{
+        .slick-list{
+            height: 410px !important;
+        }
+        .rv_right{
+            cursor: pointer;
+            &.slick-current{
+                display: none;
+            }
+            border: 1px solid #B6B6B6;
+            border-radius: 20px;
+            padding: 21px 36px;
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .product_details{
+                .product_img{
+                    img{
+                        width: 100%;
                     }
-                    p{
-                        @include text(18px,600,#4A4A4A);
-                        padding-bottom: 15px;
-                        del{
-                            @include text(12px,300,#4A4A4A);
+                }
+                .product_desp{
+                    align-self: center;
+                    .price_stars{
+                        h6{
+                            @include text(18px,500,$blue);
+                            padding-bottom: 15px;
+                        }
+                        p{
+                            @include text(18px,600,#4A4A4A);
+                            padding-bottom: 15px;
+                            del{
+                                @include text(12px,300,#4A4A4A);
+                            }
+                        }
+                        i{
+                            color: $hover;
+                            font-size: 16px;
                         }
                     }
-                    i{
+                }
+            }
+        }
+        .slick-list{
+            .slick-track{
+                transform: translate3d(0px , 0px ,0px) !important;
+                .slick-current{
+                    h4{
                         color: $hover;
-                        font-size: 16px;
                     }
                 }
             }
         }
     }
 }
+
+
 /* ============================== Recently Viewed Part End =================================== */

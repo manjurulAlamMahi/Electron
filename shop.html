@@ -21,12 +21,12 @@
         <div class="header_top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header_top_left">
                             <p><span>Need help? </span>Call us: (+98) 0234 456 789</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header_top_right">
                             <a href="#"><i class="mdi mdi-map-marker"></i>Our store</a>
                             <a href="#">Track your order<i class="mdi mdi-truck"></i></a>
@@ -65,12 +65,8 @@
     <!-- ====================== Header Part End ======================= -->
    
     <!-- ====================== Navigation Part Start ======================= -->
-    <nav id="main_menu" class="navbar navbar-expand-lg navbar-expand-md py-lg-0">
+    <nav id="main_menu" class="navbar navbar-expand-lg py-lg-0">
         <div class="container" style="background: transparent; padding: 0;">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-list"></span>
-            </button>
             <div class="browse_categories">
                 <button class="btn dropdown-toggle btn-hover" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Browse categories<i class="fas fa-chevron-down"></i>
@@ -103,6 +99,42 @@
             <div class="return_msg">
                 <h6>30 Days Free Return</h6>
             </div>
+
+            <button class="btn btn-primary mobile_menu_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <!-- OFF Canvas -->
+
+            <div class="offcanvas offcanvas-start nav_offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header mobile_menu_header">
+                    <a href="#"><img src="assets/images/footer_logo.png" alt="footer_logo"></a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mobile_menu_body">
+                    <div class="mobile_navigation" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#banner">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Our Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="mobile_down_bar">
+                            <a href="#"><i class="fa-regular fa-user"></i>Sign In</a>
+                            <a href="#"><i class="mdi mdi-heart-outline"></i><span class="badge-hover">0</span>Wishlist</a>
+                            <a href="#"><i class="mdi mdi-cart-outline"></i><span class="badge-hover">0</span>Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- ====================== Navigation Part End ======================= -->
@@ -111,6 +143,25 @@
     <section id="banner">
         <div class="container">
             <div class="banner_slider">
+                <div class="banner_item">
+                    <div class="row">
+                        <div class="col-lg-8 align-self-center">
+                            <div class="banner_text">
+                                <h2>Canon <span>camera</span></h2>
+                                <a href="#">Shop now</a>
+                                <a href="#">View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="banner_img">
+                                <img width="w-100 img-fluid" src="assets/images/banners/banner1.png" alt="banner1">
+                                <div class="ovrly_price">
+                                    <p>only <span>$89</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="banner_item">
                     <div class="row">
                         <div class="col-lg-8 align-self-center">
@@ -326,11 +377,197 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="side_filter_mobile">
+                        <button class="btn btn-hover mobile_shop_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvashop" aria-controls="offcanvashop">
+                            <i class="fa-solid fa-bars-staggered me-2"></i>Filter
+                        </button>
+                        <a class="wish" href="#"><i class="mdi mdi-heart-outline"></i> Wishlists</a>
+                        <!-- OFF Canvas -->
+            
+                        <div class="offcanvas offcanvas-start nav_offcanvas shop_offcanvas" tabindex="-1" id="offcanvashop" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header mobile_shop_header">
+                                <p>Filter :</p>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body mobile_shop_body">
+                                <div class="categories filters_item">
+                                    <div class="filter_header">
+                                        <h4>Categories</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="all_cate" type="checkbox"> 
+                                                <label for="all_cate">All categories</label>
+                                            </div>
+                                            <span>10</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="tablet" type="checkbox"> 
+                                                <label for="tablet">Tablet</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="Laptop" type="checkbox"> 
+                                                <label for="Laptop">Laptop</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="Headphones" type="checkbox"> 
+                                                <label for="Headphones">Headphones</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="Console" type="checkbox"> 
+                                                <label for="Console">Console</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="Other" type="checkbox"> 
+                                                <label for="Other">Other</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avaliability filters_item">
+                                    <div class="filter_header">
+                                        <h4>Avaliability</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="stock" type="checkbox"> 
+                                                <label for="stock">In stock</label>
+                                            </div>
+                                            <span>10</span>
+                                        </li>
+                                        <li class="disble">
+                                            <div class="input-checkbox">
+                                                <input id="outstock" type="checkbox" class="disable"> 
+                                                <label for="outstock">Out of stock</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="type filters_item">
+                                    <div class="filter_header">
+                                        <h4>Product type</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="type" type="checkbox"> 
+                                                <label for="type">Smart-watch</label>
+                                            </div>
+                                            <span>10</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand filters_item">
+                                    <div class="filter_header">
+                                        <h4>Brand</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="type" type="checkbox"> 
+                                                <label for="type">Smart-watch</label>
+                                            </div>
+                                            <span>10</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="color filters_item">
+                                    <div class="filter_header">
+                                        <h4>Color</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: red;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: blue;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: green;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: yellow;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: cyan;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: purple;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: black;"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="circle" style="background: tan;"></div></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="size filters_item">
+                                    <div class="filter_header">
+                                        <h4>Size</h4>
+                                        <a href="#">Reset</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="M" type="checkbox"> 
+                                                <label for="M">M</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="S" type="checkbox"> 
+                                                <label for="S">S</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="X" type="checkbox"> 
+                                                <label for="X">X</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                        <li>
+                                            <div class="input-checkbox">
+                                                <input id="XX" type="checkbox"> 
+                                                <label for="XX">XX</label>
+                                            </div>
+                                            <span>5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="product_list">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products04.png" alt="products03">
@@ -353,7 +590,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products02.png" alt="products02">
@@ -376,7 +613,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products01.png" alt="products01">
@@ -399,7 +636,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products04.png" alt="products03">
@@ -422,7 +659,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products02.png" alt="products02">
@@ -445,7 +682,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products01.png" alt="products01">
@@ -468,7 +705,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products04.png" alt="products03">
@@ -491,7 +728,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products02.png" alt="products02">
@@ -514,7 +751,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="product_details">
                                     <div class="product_img">
                                         <img src="assets/images/products/products01.png" alt="products01">

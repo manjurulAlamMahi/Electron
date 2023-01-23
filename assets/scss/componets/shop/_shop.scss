@@ -154,4 +154,92 @@
             }
         }
     }
+
+    .side_filter_mobile{
+        display: none;
+        .wish{
+            float: right;
+            background: $blue;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            border: none;
+            padding: .375rem .75rem;
+            border-radius: 5px;
+        }
+        .shop_offcanvas{
+            padding: 20px;
+            .mobile_shop_header{
+                p{
+                    @include text(16px,600,$hover);
+                }
+            }
+            .mobile_shop_body{
+                .filters_item{
+                    padding-top: 15px;
+                    border-bottom: 1px solid #BDBDBD;
+                    .filter_header{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 15px;
+                        h4{
+                            @include text(16px,500,$blue);
+                        }
+                        a{
+                            @include text(16px,400,#595959);
+                            
+                        }
+                    }
+                    ul{
+                        li{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 12px;
+                            &.disble{
+                                opacity: 20%;
+                            }
+                            .input-checkbox{
+                                display: flex;
+                                align-items: center;
+                                input[type="checkbox"]{
+                                    appearance: none;
+                                    border: 2px solid transparent;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: #B3D4E5;
+                                    border-radius: 8px;
+                                    margin-right: 10px;
+                                    &:checked{
+                                        background: #3F3F3F;
+                                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                                        border: 2px solid #A5A5A5;
+                                    }
+                                }
+                                label{
+                                    @include text(16px,400,#222);
+                                }
+                            }
+                        }
+                    }
+                    &.color{
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            li{
+                                a{
+                                    .circle{
+                                        width: 15px;
+                                        height: 15px;
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

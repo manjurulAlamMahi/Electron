@@ -21,12 +21,12 @@
         <div class="header_top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header_top_left">
                             <p><span>Need help? </span>Call us: (+98) 0234 456 789</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header_top_right">
                             <a href="#"><i class="mdi mdi-map-marker"></i>Our store</a>
                             <a href="#">Track your order<i class="mdi mdi-truck"></i></a>
@@ -65,12 +65,8 @@
     <!-- ====================== Header Part End ======================= -->
    
     <!-- ====================== Navigation Part Start ======================= -->
-    <nav id="main_menu" class="navbar navbar-expand-lg navbar-expand-md py-lg-0">
+    <nav id="main_menu" class="navbar navbar-expand-lg py-lg-0">
         <div class="container" style="background: transparent; padding: 0;">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-list"></span>
-            </button>
             <div class="browse_categories">
                 <button class="btn dropdown-toggle btn-hover" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Browse categories<i class="fas fa-chevron-down"></i>
@@ -103,6 +99,42 @@
             <div class="return_msg">
                 <h6>30 Days Free Return</h6>
             </div>
+
+            <button class="btn btn-primary mobile_menu_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <!-- OFF Canvas -->
+
+            <div class="offcanvas offcanvas-start nav_offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header mobile_menu_header">
+                    <a href="#"><img src="assets/images/footer_logo.png" alt="footer_logo"></a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mobile_menu_body">
+                    <div class="mobile_navigation" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#banner">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Our Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="mobile_down_bar">
+                            <a href="#"><i class="fa-regular fa-user"></i>Sign In</a>
+                            <a href="#"><i class="mdi mdi-heart-outline"></i><span class="badge-hover">0</span>Wishlist</a>
+                            <a href="#"><i class="mdi mdi-cart-outline"></i><span class="badge-hover">0</span>Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- ====================== Navigation Part End ======================= -->
@@ -130,6 +162,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="banner_item">
+                    <div class="row">
+                        <div class="col-lg-8 align-self-center">
+                            <div class="banner_text">
+                                <h2>Canon <span>camera</span></h2>
+                                <a href="#">Shop now</a>
+                                <a href="#">View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="banner_img">
+                                <img width="w-100 img-fluid" src="assets/images/banners/banner1.png" alt="banner1">
+                                <div class="ovrly_price">
+                                    <p>only <span>$89</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -138,8 +189,8 @@
     <!-- ====================== Categories Part Start ======================= -->
     <section id="category">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row category_slider">
+                <div class="col-lg-4 category_item">
                     <div class="categories_item">
                         <div class="cate_img">
                             <img src="assets/images/categories/cate1.png" alt="cate1">
@@ -150,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 category_item">
                     <div class="categories_item">
                         <div class="cate_img">
                             <img src="assets/images/categories/cate2.png" alt="cate2">
@@ -161,7 +212,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 category_item">
+                    <div class="categories_item">
+                        <div class="cate_img">
+                            <img src="assets/images/categories/cate3.png" alt="cate3">
+                        </div>
+                        <div class="cate_title">
+                            <h6>DSLR camera</h6>
+                            <p>(6 items)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 category_item">
                     <div class="categories_item">
                         <div class="cate_img">
                             <img src="assets/images/categories/cate3.png" alt="cate3">
@@ -199,7 +261,7 @@
             </div>
             <div class="popular_product_list">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products04.png" alt="products03">
@@ -222,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products02.png" alt="products02">
@@ -245,7 +307,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products01.png" alt="products01">
@@ -268,7 +330,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products03.png" alt="products03">
@@ -291,7 +353,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products02.png" alt="products02">
@@ -314,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products03.png" alt="products03">
@@ -337,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products01.png" alt="products01">
@@ -360,7 +422,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="popular_product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/products04.png" alt="products03">
@@ -418,7 +480,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="rv_left">
+                    <div class="rv_left rv_silder_carousel">
                         <div class="product_details">
                             <div class="product_img">
                                 <img src="assets/images/products/rv1.png" alt="rv1">
@@ -450,17 +512,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="rv_right">
-                        <div class="product_details row">
-                            <div class="product_img col-lg-6">
+                        <div class="product_details">
+                            <div class="product_img">
                                 <img src="assets/images/products/products01.png" alt="products01">
                             </div>
-                            <div class="product_desp col-lg-6">
+                            <div class="product_desp">
                                 <div class="price_stars">
-                                    <h6>Play Games</h6>
+                                    <h6>JBL bar 2.1 deep bass</h6>
                                     <p>$11,70 <del>$16,70</del></p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -468,23 +526,109 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
+                                <div class="quantity_wrap">
+                                    <div class="quantity_input">
+                                        <button type="button" class="input_number_decrement">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input id="qnt" class="input_number" type="text" value="1">
+                                        <button type="button" class="input_number_increment">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="adding_card">
+                                    <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                    <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="rv_right">
-                        <div class="product_details row">
-                            <div class="product_img col-lg-6">
+                        <div class="product_details">
+                            <div class="product_img">
                                 <img src="assets/images/products/products02.png" alt="products02">
                             </div>
-                            <div class="product_desp col-lg-6">
+                            <div class="product_desp">
                                 <div class="price_stars">
-                                    <h6>Wireless headphones</h6>
+                                    <h6>JBL bar 2.1 deep bass</h6>
                                     <p>$11,70 <del>$16,70</del></p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
+                                </div>
+                                <div class="quantity_wrap">
+                                    <div class="quantity_input">
+                                        <button type="button" class="input_number_decrement">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input id="qnt" class="input_number" type="text" value="1">
+                                        <button type="button" class="input_number_increment">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="adding_card">
+                                    <a class="add_cart" href="#">Add to cart <i class="mdi mdi-cart-outline"></i></a>
+                                    <a class="visible" href="#"><i class="mdi mdi-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rv_silder_nav">
+                        <div class="rv_right">
+                            <div class="product_details row">
+                                <div class="product_img col-lg-6">
+                                    <img src="assets/images/products/rv1.png" alt="rv1">
+                                </div>
+                                <div class="product_desp col-lg-6">
+                                    <div class="price_stars">
+                                        <h6>Play Games</h6>
+                                        <p>$11,70 <del>$16,70</del></p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rv_right">
+                            <div class="product_details row">
+                                <div class="product_img col-lg-6">
+                                    <img src="assets/images/products/products01.png" alt="products01">
+                                </div>
+                                <div class="product_desp col-lg-6">
+                                    <div class="price_stars">
+                                        <h6>Play Games</h6>
+                                        <p>$11,70 <del>$16,70</del></p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rv_right">
+                            <div class="product_details row">
+                                <div class="product_img col-lg-6">
+                                    <img src="assets/images/products/products02.png" alt="products02">
+                                </div>
+                                <div class="product_desp col-lg-6">
+                                    <div class="price_stars">
+                                        <h6>Wireless headphones</h6>
+                                        <p>$11,70 <del>$16,70</del></p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -500,7 +644,7 @@
         <div class="container">
             <div class="service_row">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="service_content">
                             <div class="icon">
                                 <i class="fa-solid fa-truck-ramp-box"></i>
@@ -511,7 +655,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="service_content">
                             <div class="icon">
                                 <i class="fa-solid fa-crown"></i>
@@ -522,7 +666,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="service_content">
                             <div class="icon">
                                 <i class="fa-solid fa-shield-halved"></i>
@@ -542,8 +686,8 @@
     <!-- ====================== Top Clients Part Start ======================= -->
     <section id="clients">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row clients_slider">
+                <div class="col-lg-4 client_item">
                     <div class="clients_item">
                         <div class="clients_topbar">
                             <div class="avatar">
@@ -557,7 +701,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 client_item">
                     <div class="clients_item">
                         <div class="clients_topbar">
                             <div class="avatar">
@@ -571,7 +715,21 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 client_item">
+                    <div class="clients_item">
+                        <div class="clients_topbar">
+                            <div class="avatar">
+                                <img src="assets/images/customers/clients03.png" alt="clients03.png">
+                            </div>
+                            <h6>Esther Howard</h6>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 client_item">
                     <div class="clients_item">
                         <div class="clients_topbar">
                             <div class="avatar">
@@ -618,16 +776,16 @@
         <div class="container">
             <div class="header">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-6">
                         <h2>Latest news</h2>
                     </div>
-                    <div class="col-lg-6 text-end">
+                    <div class="col-lg-6 col-6 text-end">
                         <a href="#">View all</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row news_slider">
+                <div class="col-lg-6 news_item">
                     <div class="news_details">
                         <div class="row">
                             <div class="col-lg-7 align-self-center">
@@ -646,7 +804,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 news_item">
+                    <div class="news_details">
+                        <div class="row">
+                            <div class="col-lg-7 align-self-center">
+                                <div class="news_img">
+                                    <img class="w-100 img-fluid" src="assets/images/news01.png" alt="news01">
+                                </div>    
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="news_content">
+                                    <span>22,oct,2021</span>
+                                    <h4>Who avoids a pain that produces?</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                                    <h6>By spacing tech</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 news_item">
                     <div class="news_details">
                         <div class="row">
                             <div class="col-lg-7 align-self-center">

@@ -1,27 +1,57 @@
 /* ============================== News Part Start =================================== */
 #news{
     padding: 190px 0 160px 0;
-    .news_details{
-        border: 1px solid #C8C8C8;
-        border-radius: 20px;
-        padding: 40px 16px;
-        .news_content{
-            span{
-                @include text(20px,500,$blue);
-                border: 1px solid #D4D4D4;
+    .news_slider{
+        position: relative;
+        .news_item{
+            margin: 0 12px;
+            .news_details{
+                border: 1px solid #C8C8C8;
                 border-radius: 20px;
-                padding: 5px 20px;
-                text-align: center;
+                padding: 40px 16px;
+                .news_content{
+                    span{
+                        @include text(20px,500,$blue);
+                        border: 1px solid #D4D4D4;
+                        border-radius: 20px;
+                        padding: 5px 20px;
+                        text-align: center;
+                    }
+                    h4{
+                        padding: 10px 0 20px 0;
+                        @include text(20px,600,$blue);
+                    }
+                    p,h6{
+                        @include text(14px,400,$blue);
+                    }
+                    p{
+                        padding-bottom: 40px;
+                    }
+                }
             }
-            h4{
-                padding: 10px 0 20px 0;
-                @include text(20px,600,$blue);
-            }
-            p,h6{
-                @include text(14px,400,$blue);
-            }
-            p{
-                padding-bottom: 40px;
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            li{
+                &.slick-active{
+                    button{
+                        background: $hover;
+                        border-color: $hover;
+                    }
+                }
+                button{
+                    width: 19px;
+                    margin: 0 5px;
+                    height: 19px;
+                    border: 1px solid #ADADAD;
+                    border-radius: 50%;
+                    font-size: 0;
+                }
             }
         }
     }
